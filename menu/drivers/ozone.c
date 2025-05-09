@@ -6447,6 +6447,11 @@ static void ozone_draw_thumbnail_bar(
                0.0f, 0.0f, 0.0f, 1.0f,
          };
 
+         background_color[3]  =
+         background_color[7]  =
+         background_color[11] =
+         background_color[15] = left_thumbnail_alpha;
+
          left_thumbnail_alignment = GFX_THUMBNAIL_ALIGN_CENTRE;
 
          gfx_display_draw_quad(
